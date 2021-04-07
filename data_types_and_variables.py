@@ -62,4 +62,3 @@ userpassvalid = {
     'user_pass': usepasscheck,
     'whitespacechk': wscheck
 }
-
