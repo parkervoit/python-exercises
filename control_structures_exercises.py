@@ -129,6 +129,7 @@ books = [
      'author' : 'Huston Smith'
      'genre' : 'nonfiction'}
 ]
+print(books)
 input_genre = input("What genre?:")
 for x in books:
     if x['genre'] == input_genre:
