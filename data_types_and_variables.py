@@ -25,12 +25,13 @@ print(paycheck)
 
 #3.A student can be enrolled to a class only if the calss is not full and the schedule does not conflict with her current schedule
 print('Question 3')
-class_has_space == True  
-schedule_clear == True
+class_has_space = True  
+schedule_clear = True
 enroll_in_class = schedule_clear == True and class_has_space == True
 print(enroll_in_class)
 
 #4. a product offer can only be applied if people buy more than two items and offer has not expired.
+print("Question 4")
 print('Number of items in cart:')
 quantity = int(input())
 itemq = quantity > 2
@@ -62,3 +63,4 @@ userpassvalid = {
     'user_pass': usepasscheck,
     'whitespacechk': wscheck
 }
+print("Bool vals stored: " + userpassvalid)
