@@ -43,6 +43,6 @@ trucks = [{
 }]
 
 for x in trucks:
-    x['make'].upper
-    x['model'].upper
-print(trucks)
+    x['make'] = x['make'].upper()
+    x['model'] = x['model'].upper()
+    print(x)
