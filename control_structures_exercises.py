@@ -129,7 +129,8 @@ books = [
      'author' : 'Huston Smith'
      'genre' : 'nonfiction'}
 ]
-print(books)
+for x in books:
+    [print(key, ': ', x[key]) for key in x)]
 input_genre = input("What genre?:")
 for x in books:
     if x['genre'] == input_genre:
