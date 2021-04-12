@@ -60,7 +60,7 @@ def calculate_tip(tipamt, bill):
     # finds tip amount, adds it to the total, and outputs the bill with tip included
     total = (tipamt * bill) + bill
     return total 
-print(calculate_tip(tipamt))
+print(calculate_tip(tipamt, bill))
 
 #6. 
 # prompt user for original price
@@ -152,5 +152,6 @@ def cumulative_sum(lisnum):
     return total
 # returns a list of values that are self summing
 print(cumulative_sum(lisnum))
-print(type(lisnum))
-print(lisnum)
+#print(type(lisnum))
+#print(lisnum)
+
