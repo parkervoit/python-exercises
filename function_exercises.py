@@ -155,3 +155,24 @@ print(cumulative_sum(lisnum))
 #print(type(lisnum))
 #print(lisnum)
 
+#B-B-B-B-B-BONUS
+#1. Create a function named twelveto24. 
+# It should accept a string in the format 10:45am or 4:30pm 
+# and return a string that is the representation of the time in a 24-hour format. 
+# Bonus: write a function that does the opposite.
+
+# prompt user for time input
+time = input("Please input time in HH:MMam|pm")
+def twelveto24(time):
+    # begin by checking if string ends with AM and starts with 12, then return "00" and the minutes w/o pm
+    if time[-2:] == "AM" and time[:2] == "12":
+        return "00" + time[2:-2] 
+    # checks to see if it is an AM, then just returns the value without the am 
+    elif time[-2:] == "AM": 
+        return time[:-2]
+    else:
+        # concatenated strings to return correct date format
+        return str(int(time[:2]) + 12) + time[2:4]
+print(twelveto24(time))
+
+#2.
