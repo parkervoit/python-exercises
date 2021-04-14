@@ -1,5 +1,6 @@
 #Data structure manipulation exercises
 # Creating a dictionary with student information
+import numpy as np
 students = [
     {
         "id": "100001",
@@ -122,12 +123,47 @@ students = [
 
 # 20 Data Structure Manipulation questions
 #How many students are there?
-len(students(id))
+len(students)
+    # there are 14 students
 #How many students prefer light coffee? For each type of coffee?
+light = 0
+medium = 0
+dark = 0
+other = 0
+for x in students:
+    if x['coffee_preference'] == 'light':
+        light += 1
+    elif x['coffee_preference'] == 'medium':
+        medium += 1
+    elif x['coffee_preference'] == 'dark':
+        dark += 1
+    else:
+        other += 1
+        
+print(light)
+print(medium)
+print(dark)
+    # 3 light, 6 medium, 5 dark 
 #How many grades does each student have? Do they all have the same number of grades?
+for x in students:
+    print(len(x['grades']))
+    # same number of grades, 4 
 #What is each student's grade average?
+for x in students:
+    print(np.mean(x['grades']))
 #How many pets does each student have?
 #How many students are in web development? data science?
+webdev = 0
+ds = 0
+for x in students:
+    if x['course'] == 'web development':
+        webdev += 1
+    else:
+        ds += 1
+print("web dev", ": ", webdev )
+print("data sci", ": ", ds)
+    #web dev :  7
+    #data sci :  7x
 #What is the average number of pets for students in web development?
 #What is the average pet age for students in data science?
 #What is most frequent coffee preference for data science students?

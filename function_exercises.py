@@ -176,3 +176,6 @@ def twelveto24(time):
 print(twelveto24(time))
 
 #2.
+lite = 0
+med = 0
+dark = 0 
